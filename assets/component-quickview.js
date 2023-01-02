@@ -49,7 +49,7 @@ class QuickView extends HTMLElement {
         var quickViewData = (document.querySelectorAll("quick-view").innerHTML = result[`template-product-quickview`]);
         document.querySelector("quick-view").setAttribute("id", "main");
         this.closeQuickView(quickViewData);
-        this.AjaxCart(quickViewData);
+        this.ajaxCart(quickViewData);
         this.VariantChange(quickViewData);
         this.manageQuantity(quickViewData);
       })
