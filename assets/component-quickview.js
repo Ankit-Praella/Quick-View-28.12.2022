@@ -50,7 +50,7 @@ class QuickView extends HTMLElement {
         document.querySelector("quick-view").setAttribute("id", "main");
         this.closeQuickView(quickViewData);
         this.ajaxCart(quickViewData);
-        this.VariantChange(quickViewData);
+        this.variantChange(quickViewData);
         this.manageQuantity(quickViewData);
       })
       .catch((error) => {
