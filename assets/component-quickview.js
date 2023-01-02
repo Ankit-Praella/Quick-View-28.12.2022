@@ -84,7 +84,7 @@ class QuickView extends HTMLElement {
   /**
   *  Variant Change of Item
   */
-  VariantChange(selectVariant) {
+  variantChange(selectVariant) {
     var selectVariant = document.querySelector("[select_variants]");
     selectVariant.addEventListener("change", (event) => {
       var varId = event.target.selectedOptions[0].getAttribute("variant-id");
@@ -112,7 +112,7 @@ class QuickView extends HTMLElement {
   /**
   *  addCart of Item
   */
-  AjaxCart(currentQty) {
+  ajaxCart(currentQty) {
     var items = document.querySelector("[addCart]");
       items.addEventListener("click", (event) => {
        var quickView = document.querySelector("quick-view"); 
